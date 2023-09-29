@@ -1,0 +1,519 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #747bff;
+  width: 100%;
+  padding: 0; margin: 0;
+}
+
+#root {
+  width: 100%;
+  display: flex; flex-direction: column;
+}
+
+/* NAVBAR */
+
+.imgTitle {
+  display: flex;
+  align-items: center;
+}
+
+.navBar {
+  background-color: darkgray;
+  display: flex; align-items: center;
+  justify-content: space-around;
+  width: 100%; height: 8vh;
+}
+
+.navBar img {
+  width: 5.5vh; height: 5.5vh;
+  margin-right: 1vh;
+}
+
+/* .imgLogo {
+  margin-right: 1vh;
+  margin-left: 6vh;
+} */
+
+/* .contenedorCarrito {
+  position: absolute;
+  right: 6vh;
+} */
+
+.button-categories {
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  border-radius: 1vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1vh;
+}
+
+.buttonCarrito {
+  background: none;
+  border-radius: 1vh;
+  display: flex; justify-content: space-around; align-items: center;
+  width: 10vh; height: 6vh;
+  background-color: lightgray;
+}
+
+.buttonCarrito img {
+  width: 5vh; height: 5vh;
+}
+
+.numeroCarrito {
+  display: flex; justify-content: center; align-items: center;
+  padding-bottom: 0.2vh;
+  width: 2.5vh; height: 2.5vh;
+  background-color: goldenrod;
+  color: black;
+  font: bold;
+  border-radius: 2vh;
+}
+
+/* CONTENEDOR COMPRANDO . . . */
+.absolute {
+  position: absolute;
+}
+
+.contenedorComprando {
+  position: absolute;
+  top: 8.18vh; right: 0.21vh;
+  width: 197.4vh;
+  height: 84vh;
+  background-color: lightgrey;
+  border: solid 1px white;
+  border-radius: 0.5vh;
+}
+
+
+/* FIN CONTENEDOR COMPRANDO . . . */
+
+/* FIN NAVBAR */
+
+/* CONTENEDOR PRINCIPAL ITEMS */
+
+.titulo-greeting {
+  text-align: center;
+  padding: 1vh 0;
+  font-size: 5vh;
+  font-weight: bold;
+  color: lightgray;
+  background-color: #000;
+}
+
+.itemListContainer {
+  display: flex; justify-content: space-evenly;
+  align-items: center;
+  background-color: lightgray;
+  width: 100%; height: 84vh;
+}
+
+.row-productItem {
+  height: 84vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-item {
+  max-width: 300px;
+  margin: 0 20px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-item h3 {
+  font-size: 2.7vh;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: black;
+  font: bold;
+}
+
+.product-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-item .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-item button {
+  display: flex; justify-content: center; align-items: center;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  width: 100%;
+  height: 4vh;
+  font-size: 18px;
+}
+
+.control-items {
+  margin-top: 1vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.control-items button {
+  border-radius: 1.5vh;
+  background-color: gainsboro;
+  height: 4vh;
+  width: 10vh;
+}
+
+.central-button {
+  margin: 0 2vh;
+}
+
+.contadorSuma {
+  margin: 1vh 0;
+  background-color: darkslategray;
+  color: white;
+}
+
+.detalles {
+  background-color: darkslategrey;
+  color: white;
+  padding: 0 34%;
+  border: solid 1px black;
+  border-radius: 0;
+}
+/* FIN CONTENEDOR PRINCIPAL ITEMS */
+
+.item-detail-container {
+  height: 84vh;
+  display: flex; justify-content: space-evenly; align-items: center;
+}
+
+/* Product-item-details */
+.product-item-details {
+  width: 30%;
+  height: 75vh;
+  display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* .product-item-details img {
+  max-width: 100%;
+  height: auto;
+} */
+
+.product-item-details p {
+  width: 100%;
+  font-size: 3vh;
+  margin-bottom: 10px;
+}
+
+.product-item-details h2 {
+  width: 85%;
+}
+
+.product-item-details .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-item-details button {
+  display: flex; justify-content: center; align-items: center;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  width: 100%;
+  height: 4vh;
+  font-size: 18px;
+}
+
+.control-items-details {
+  margin-top: 1vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.control-items-details button {
+  border-radius: 1.5vh;
+  background-color: gainsboro;
+  height: 4vh;
+  width: 10vh;
+}
+
+.central-button-details {
+  margin: 0 2vh;
+}
+
+.contadorSuma-details {
+  height: auto;
+  font-size: 9vh;
+  margin: 1vh 0;
+  background-color: darkslategray;
+  color: white;
+}
+
+.detalles-details {
+  background-color: darkslategrey;
+  color: white;
+  padding: 0 34%;
+  border: solid 1px black;
+  border-radius: 0;
+}
+
+.img-detail {
+  width: 24vh;
+}
+/* Product-item-details */
+
+/* FOOTER */
+
+.footer {
+  display: grid;
+  place-items: center;
+  background-color: grey;
+  width: 100%; height: 8vh;
+}
+
+/* FIN FOOTER */
+
+/* CARRO DE COMPRAS  CARRO DE COMPRAS  CARRO DE COMPRAS  CARRO DE COMPRAS  CARRO DE COMPRAS  CARRO DE COMPRAS  CARRO DE COMPRAS */
+
+.cart-all{
+  display: flex; align-items: center;
+}
+
+.carro-container {
+  height: 84vh;
+  width: 100%;
+  display: flex; justify-content: center; align-items: center;
+}
+
+.carro {
+  display: flex; flex-direction: column; align-items: center; justify-content: space-around;
+  background-color: white;
+  width: 88%;
+  height: 66vh;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-carro {
+  display: flex; justify-content: space-around; align-items: center;
+  width: 90%;
+  height: 14vh;
+  margin: 1vh;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 2.5px;
+  border-image-source: linear-gradient(to top, #000, green);
+  background-color: white;
+  box-shadow: 0px 3.5px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-cart{
+  display: flex; justify-content: center; align-items: center;
+  height: 10vh;
+}
+
+.inputQuitar{
+  padding: 0.5vh;
+  border: solid 1px darkslategray;
+}
+
+/* VACIAR CARRO */
+.noselect {
+width: 150px;
+height: 50px;
+cursor: pointer;
+display: flex;
+align-items: center;
+background-color: red;
+border: none;
+border-radius: 5px;
+box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+.noselect, button span {
+transition: 200ms;
+}
+
+.noselect .text {
+transform: translateX(35px);
+color: white;
+font-weight: bold;
+}
+
+.noselect .icon {
+position: absolute;
+border-left: 1px solid #c41b1b;
+transform: translateX(110px);
+height: 40px;
+width: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.noselect svg {
+width: 15px;
+fill: #eee;
+}
+
+.noselect:hover {
+background: #ff3636;
+}
+
+.noselect:hover .text {
+color: transparent;
+}
+
+.noselect:hover .icon {
+width: 150px;
+border-left: none;
+transform: translateX(0);
+}
+
+.noselect:focus {
+outline: none;
+}
+
+.noselect:active .icon svg {
+transform: scale(0.8);
+}
+/* VACIAR CARRO */
+
+.precio-total{
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; height: 5vh;
+  background-color: darkslategrey;
+  color: white;
+}
+
+/* CARRO DE COMPRAS  CARRO DE COMPRAS  CARRO DE COMPRAS  CARRO DE COMPRAS  CARRO DE COMPRAS  CARRO DE COMPRAS  CARRO DE COMPRAS */
+
+.load-container {
+  background: rgb(220,220,220);
+  background: radial-gradient(circle, rgba(220,220,220,1) 50%, rgba(0,0,0,0) 100%);
+  height: 84vh;
+  display: grid;
+  place-content: center;
+}
+
+/* LOADER LOADER LOADER */
+
+.spinner {
+  background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));
+  width: 100px;
+  height: 100px;
+  animation: spinning82341 1.7s linear infinite;
+  text-align: center;
+  border-radius: 50px;
+  filter: blur(1px);
+  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+}
+
+.spinner1 {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(0,0,0,1) 90%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  filter: blur(10px);
+}
+
+@keyframes spinning82341 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* LOADER LOADER LOADER */
+
+/* BUTTON LOADER */
+
+/*  x_x  */
+
+/* BUTTON LOADER */
+
+/* CARD CARRO VACIO CARD CARRO VACIO CARD CARRO VACIO CARD CARRO VACIO CARD CARRO VACIO */
+.cart-vacio {
+  z-index: 1;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.card-inner {
+  display: flex; justify-content: center; align-items: center;
+  width: inherit;
+  height: inherit;
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#b0e633, #53ef7d);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1) {
+  top: -40px;
+  left: -50px;
+}
+
+.circle:nth-child(2) {
+  bottom: -55px;
+  right: -55px;
+  animation-name: move-down1;
+}
+
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
+/* CARD CARRO VACIO CARD CARRO VACIO CARD CARRO VACIO CARD CARRO VACIO CARD CARRO VACIO */
+
+/* FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - */
+
+.bg-form-container {
+  margin-right: 10vh;
+}
+
+.bordes-form {
+  background: linear-gradient(130deg, rgba(47,79,74,1) 25%, rgba(16,27,25,1) 50%, rgba(47,79,74,1) 75%);
+}
+
+/* FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - FORMULARIO - */

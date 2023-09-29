@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Teclado Gamer",
+        "price": 89.99,
+        "description": "Cuenta con interruptores mecánicos de respuesta táctil, retroiluminación RGB, anti-ghosting, teclas programables y diseño ergonómico, es tu herramienta esencial para una experiencia de juego excepcional. ¡Mejora tu rendimiento y estilo con este teclado de alta gama!",
+        "category": "Perifericos",
+        "img": "{imgTeclado}",
+        "icon": "mouse"
+    },
+    {
+        "id": 2,
+        "title": "Mouse Gamer",
+        "price": 32.99,
+        "description": "Este mouse cuenta con precisión láser, botones programables, retroiluminación RGB, diseño ergonómico y seguimiento de alta velocidad. Eleva tu nivel de juego con este periférico de alto rendimiento.",
+        "category": "Perifericos",
+        "img": "{imgMouse}",
+        "icon": "keyboard"
+    },
+    {
+        "id": 3,
+        "title": "PC Gamer",
+        "price": 235.99,
+        "description": "¡Potencia tus juegos con nuestra PC gamer de calidad en venta! Equipada con un procesador de última generación, tarjeta gráfica de alto rendimiento, amplia memoria y almacenamiento rápido, esta máquina ofrece un rendimiento de primera para tus aventuras digitales. Juega sin límites con nuestro PC gamer de calidad.",
+        "category": "PCArmada",
+        "img": "{imgPC}",
+        "icon": "computer"
+    }
+]
